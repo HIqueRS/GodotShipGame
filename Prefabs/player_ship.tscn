@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca6dpqs0153m0"]
+
+[ext_resource type="PackedScene" uid="uid://w6t4tqwhuk4a" path="res://Prefabs/Ship.tscn" id="1_ng2an"]
+[ext_resource type="Script" path="res://Scripts/Player_ship.gd" id="2_tk75h"]
+[ext_resource type="Texture2D" uid="uid://cduo8b4arghi8" path="res://Sprites/PlayerShip/player_ship_default.png" id="3_5jxk3"]
+
+[node name="Player_Ship" instance=ExtResource("1_ng2an")]
+script = ExtResource("2_tk75h")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("3_5jxk3")

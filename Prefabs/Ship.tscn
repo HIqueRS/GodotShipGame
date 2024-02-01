@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://w6t4tqwhuk4a"]
+
+[ext_resource type="Script" path="res://Scripts/Ship.gd" id="1_vuq28"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ooe6"]
+size = Vector2(25, 84)
+
+[node name="Ship" type="CharacterBody2D"]
+z_index = 2
+script = ExtResource("1_vuq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -5)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_1ooe6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -1.5708

@@ -12,7 +12,7 @@ func _process(delta):
 	pass
 	
 func _move_foward(delta):
-	velocity = transform.x * (speed * 10 )
+	velocity = transform.x * (speed * 1000 ) * delta
 	pass
 	
 func _rotate(delta, direction):

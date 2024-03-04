@@ -4,6 +4,10 @@ func _process(delta):
 	_input_buttons(delta)
 	move_and_slide()
 	pass
+	
+func _physics_process(delta):
+	
+	pass
 
 func _input_buttons(delta):
 	if( Input.is_action_pressed("Foward") == true):

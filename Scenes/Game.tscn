@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://mxcqwxiikxe"]
+[gd_scene load_steps=9 format=3 uid="uid://mxcqwxiikxe"]
 
 [ext_resource type="Texture2D" uid="uid://bfgqhcqrjcnva" path="res://Sprites/Tiles/tiles_sheet.png" id="1_oppnm"]
 [ext_resource type="PackedScene" uid="uid://ca6dpqs0153m0" path="res://Prefabs/player_ship.tscn" id="4_tp8ep"]
 [ext_resource type="PackedScene" uid="uid://64a7dk8ijrwg" path="res://Prefabs/chaser.tscn" id="5_mvvd6"]
+[ext_resource type="PackedScene" uid="uid://bfofeiu6y3cyi" path="res://Prefabs/bullet.tscn" id="5_wuujj"]
 [ext_resource type="PackedScene" uid="uid://dhtrx1p51ycpi" path="res://Prefabs/shooter.tscn" id="6_6mowo"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_vdbdh"]
@@ -425,3 +426,8 @@ speed = 3
 position = Vector2(-86, 546)
 distance_to_shoot = 500
 target = NodePath("../Player_Ship")
+
+[node name="Bullet" parent="." instance=ExtResource("5_wuujj")]
+position = Vector2(623, 19)
+direction = Vector2(0, 1)
+speed = 3
